@@ -1,0 +1,135 @@
+body {
+  background-color: #e4eaef;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+  line-height: 32px;
+  text-align: justify;
+}
+
+.eng {
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-right: -0.1em;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 20px 0 0;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+header img {
+  width: 36px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding: 30px 24px 0 0;
+  }
+
+  header img {
+    width: 45px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+}
+
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+}
+
+#btnClose {
+  display: none;
+}
+
+
+#gnavi {
+  padding: 100px 60px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  background-color: #669ecc;
+  transition: transform 0.4s;
+  z-index: -1;
+}
+
+#gnavi li a {
+  display: block;
+  padding: 18px 0;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-right: -0.1em;
+  border-bottom: #fff 2px solid;
+}
+
+#gnavi li a:hover {
+  color: #ffdd63;
+}
+
+#gnavi.op {
+  transform: translateX(-100%);
+}
+
+@media (min-width: 768px) {
+  #gnavi {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  #gnavi {
+    width: 25%;
+  }
+}
+
+footer {
+  background-color: #669ecc;
+}
+
+footer p {
+  font-family: "Montserrat";
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-right: -0.1em;
+  color: #fff;
+  font-size: 12px;
+  line-height: 120px;
+  text-align: center;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.5s, transform 1s;
+}
+
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
